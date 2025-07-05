@@ -1,0 +1,183 @@
+  body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #a00000;
+      margin: 0;
+      padding: 20px;
+      
+    }
+   
+
+
+    h1 {
+  font-family: 'Okra';
+  font-size: 36px;
+  text-align: center;
+  background: linear-gradient(to right, #ff426e, #b40f0f,#fe2b2b);
+  color: white;
+  shape-outside: margin-box;
+}
+
+
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+
+
+    .dish {
+      background: #ffffff;
+      padding: 20px;
+      padding-left: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px 0 10px rgba(20, 20, 20, 0.1);
+      text-align: center;
+    }
+      .dish:hover{
+    /* opacity: 0.5; */
+    cursor: pointer;
+    background-color: #f27e7e62;
+    inline-size: 180px ;
+}
+
+.dish {
+  transition: all 0.3s ease-in-out;
+}
+
+
+    .dish img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 5px;
+    }
+    .dish img {
+  transition: transform 0.3s ease;
+  
+}
+.dish:hover img {
+  transform: scale(1.1);
+}
+
+
+.dish:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  background-color: #f27e7e62;
+}
+
+
+
+    input[type="number"] {
+      width: 60px;
+      padding: 6px;
+      font-size: 14px;
+      text-align: center;
+      border: 2px solid #007BFF;
+      border-radius: 8px;
+      margin: 5px 0;
+    }
+
+    .btn-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      color: white;
+    }
+
+    .btn-row button:first-child {
+      background-color: #007BFF;
+    }
+
+    
+
+    .cancel-btn {
+      background-color: #dc3545;
+    }
+
+    .cancel-btn:hover {
+      background-color: #a71d2a;
+    }
+
+    .final-bill-btn {
+      display: block;
+      margin: 30px auto;
+      background-color: #28a745;
+      padding: 14px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 12px;
+      transition: 0.3s ease;
+    }
+
+    .final-bill-btn:hover {
+      background-color: #218838;
+    }
+
+    .bill-container {
+      display: none;
+      margin-top: 30px;
+    }
+
+    .bill-box {
+      background: linear-gradient(135deg, #ffffff, #f1f8ff);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      border: 2px dashed #007BFF;
+    }
+
+    .bill-box h2 {
+      color: #007BFF;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #bill-items p {
+      font-size: 16px;
+      margin: 6px 0;
+      color: #444;
+    }
+
+    #bill-total {
+      color: #28a745;
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .thanks-msg {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .payment-option {
+      text-align: center;
+      margin-top: 20px;
+    }
+.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+.dark-mode .dish {
+  background-color: #222;
+  color: #fff;
+}

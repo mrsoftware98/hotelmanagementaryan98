@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>aryan912</title>
+  <link rel="stylesheet" href="hotel.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+  <h1 style="text-align:center",><b>Front-End Devloper Hotel</b></h1>
+  <h3 style="text-align:center">🍽️ Choose Menu 🍽️</h3>
+  <div id="menu" class="menu-container"></div>
+  <button class="final-bill-btn" onclick="showFinalBill()">💵 Show Final Bill</button>
+  <div id="final-bill" class="bill-container"></div>
+  <button onclick="toggleTheme()" style="position:fixed;top:10px;right:10px;">🌙mode</button>
+<canvas id="confetti-canvas" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999;"></canvas>
+
+  
+    <script src="hotel.js"></script>
+
+</body>
+</html>
